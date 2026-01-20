@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <main className="min-h-screen px-8 py-20 max-w-2xl">
-      <br /><br /><br /><br />
+      <br /><br /><br />
       <h1 className="text-3xl font-semibold mb-8">
         About Me
       </h1>
