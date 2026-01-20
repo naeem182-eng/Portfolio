@@ -3,8 +3,9 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 
 export const metadata = {
-  title: "Naeem | Portfolio",
+  title: "Isares Khamwirai (Naeem) | Portfolio",
   description: "Turning ideas into code.",
+  themeColor:"#111111",
 }
 
 export default function RootLayout({
@@ -13,14 +14,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className="bg-[#111] text-zinc-100 min-h-screen flex flex-col">
+    <html lang="en" className="dark">
+      <body className="bg-[#111] text-zinc-100">
         <Navbar />
-
-        <main className="flex-1">
-          {children}
-        </main>
-
+        {children}
         <Footer />
       </body>
     </html>
